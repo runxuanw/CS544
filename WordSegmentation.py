@@ -22,9 +22,9 @@ for line in file:
     item = line.split("\t")
     usrID = item[0]
     userInfo[usrID] = {}
-    userInfo["age"] = item[1]
-    userInfo["gen"] = item[2]
-    userInfo["edu"] = item[3]
+    userInfo[usrID]["age"] = item[1]
+    userInfo[usrID]["gen"] = item[2]
+    userInfo[usrID]["edu"] = item[3]
     for i in range(4,len(item)):
         if (i == 4):
             queryList[usrID] = []
@@ -37,3 +37,7 @@ for line in file:
             res += " " + word
         print res
         queryList[usrID].append(res)
+
+outputfile = open("wordprocessed.txt","w+")
+outputfile.write(str(userInfo)+"\n")
+outputfile.write(str(queryList)+"\n")
