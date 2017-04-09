@@ -22,9 +22,18 @@ for line in file:
     item = line.split("\t")
     usrID = item[0]
     userInfo[usrID] = {}
-    userInfo[usrID]["age"] = item[1]
-    userInfo[usrID]["gen"] = item[2]
-    userInfo[usrID]["edu"] = item[3]
+    if (float(item[1]).is_integer()):
+        userInfo[usrID]["age"] = item[1]
+    else:
+        print "check"
+    if (float(item[2]).is_integer()):
+        userInfo[usrID]["gen"] = item[2]
+    else:
+        print "check2"
+    if (float(item[3]).is_integer()):
+        userInfo[usrID]["edu"] = item[3]
+    else:
+        print "check3"
     for i in range(4,len(item)):
         if (i == 4):
             queryList[usrID] = []
@@ -35,9 +44,8 @@ for line in file:
             if word in stopWord:
                 continue
             res += " " + word
-        print res
         queryList[usrID].append(res)
 
-outputfile = open("wordprocessed.txt","w+")
+outputfile = open("wordprocessed.txt","w")
 outputfile.write(str(userInfo)+"\n")
 outputfile.write(str(queryList)+"\n")
