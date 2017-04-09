@@ -43,7 +43,7 @@ The rest of the data example is user's seach hisory. Each query is seperated by 
 
 I seperated the data into training and testing parts, traning is 75% of total (15000 lines), and testing is 25% (5000 lines).
 
-##Tools we use
+## Tools we use
 https://github.com/fxsjy/jieba This is the word segmentation tool I used.
 
 Output file of WordSegmentation.py is wordprocessed.txt. Output file has two lines, the first line is user ID and user information, second line is user ID and user query. You can use code snippet like following to retrive data and store them as a two dimensional array.
