@@ -8,6 +8,7 @@ E36710951AD5D8379F85FFBFCF46780E	1	1	5	藏御堂28泡	大丈夫功名未成	小�
 
 The first hash string is that user's ID
 The first integer label is user's age label, there are 7 possible values for age label, each value and its meaning is listed below.
+
 | Age label value | Meaning          |
 | ----------------| -----------------|
 | 0               | unknown          |
@@ -19,6 +20,7 @@ The first integer label is user's age label, there are 7 possible values for age
 | 6               | 51-999 years old |
 
 The second integer label is user's gender label, there are 3 possible values for gender label, each value and its meaning is listed below.
+
 | Gender label value| Meaning |
 | ------------------| --------|
 | 0                 | unknown |
@@ -26,6 +28,7 @@ The second integer label is user's gender label, there are 3 possible values for
 | 2                 | female  |
 
 The third integer label is user's education label, there are 7 possible values for education label, each value and its meaning is listed below.
+
 | Education label value| Meaning       |
 | ---------------------| --------------|
 | 0                    | unknown       |
