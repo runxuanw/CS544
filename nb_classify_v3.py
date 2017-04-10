@@ -70,7 +70,7 @@ for lineKey in verifyData.keys():
             maxEduProb=max(maxEduProb, eduProb[i])
             if maxEduProb==eduProb[i]:
                 maxEdu=i
-    tags=maxAge+" "+maxGen+" "+maxEdu
+    tags=str(maxAge)+" "+str(maxGen)+" "+str(maxEdu)
     userInfo[userID]=tags                         
     '''
     for i in range(7):
