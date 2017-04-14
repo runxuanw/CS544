@@ -59,7 +59,7 @@ zh.json is stop word list, sougou.dic is a Chinese word tag dictionary, both are
 
 sklearn is the library we use for td-idf feature selection + SVM classification. http://scikit-learn.org/stable/modules/svm.html#svm
 
-##Results we get
+## Results we get
 --SVM Wtih Word Segmentation Accuracy-----------  
 age: 0.5714  
 gender: 0.8062  
