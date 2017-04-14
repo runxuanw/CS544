@@ -58,3 +58,25 @@ queryList = eval(fileget[1])
 zh.json is stop word list, sougou.dic is a Chinese word tag dictionary, both are used to improve word segmentation accuracy.
 
 sklearn is the library we use for td-idf feature selection + SVM classification. http://scikit-learn.org/stable/modules/svm.html#svm
+
+##Results we get
+--SVM Wtih Word Segmentation Accuracy-----------_
+age: 0.5714_
+gender: 0.8062_
+education: 0.55_
+average: 0.642533333333_
+--Naive Bayes With Word Segmentation Accuracy---_
+age: 0.2474_
+gender: 0.485_
+education: 0.2328_
+average: 0.321733333333_
+--SVM Wtihout Word Segmentation Accuracy--------_
+age: 0.438_
+gender: 0.6932_
+education: 0.4324_
+average: 0.5212_
+--Neural Network Accuracy-----------------------_
+age: 0.4756_
+gender: 0.785_
+education: 0.4176_
+average: 0.5594_
